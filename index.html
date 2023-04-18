@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GTA 2</title>
+  <link type="Image/x-icon" href="./favicon.ico" rel="icon">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <!--! Wrapper -->
+  <div class="wrapper">
+    <img class="wasted" src="img/wasted.png" alt="">
+    <button type="button" class="play-again btn">Play again</button>
+    <div class="score-wrap">
+      <span>Score: </a></span>
+      <span id="score">0</span>
+    </div>
+    <div class="time-wrap">
+      <span>Time: </a></span>
+      <span id="time">0</span>
+    </div>
+    <div class="bg-wrap">
+      <div class="left-bg"></div>
+      <div class="center-bg"></div>
+      <div class="right-bg"></div>
+    </div>
+    <div class="popup-links">
+      <a href="#game" class="popup-link">?</a>
+      <a href="#pause" id="pause-link" class="popup-link">❚ ❚</a>
+    </div>
+    <canvas></canvas>
+  </div>
+
+  <div id="game" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="popup__close close-popup">X</a>
+        <div class="popup__text">Hi, welcome to my game, this game has not been released yet, but take a look at it
+          and yeah, let's go and beat your best score!!!</div>
+        <div class="popup__buttons buttons-popup">
+          <button type="button" class="buttons-popup__btn_agree buttons-popup__btn_github btn">Yes, lesss
+            go</button>
+          <button type="button" class="buttons-popup__btn_disagree btn">Noo, :|</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="pause" class="popup">
+    <div class="popup__body">
+      <div class="popup__content">
+        <a href="#" class="popup__close close-popup">X</a>
+        <div class="popup__text">You're on a pause now :)</div>
+        <div class="popup__pause-buttons pause-buttons-popup">
+          <button type="button" class="pause-buttons-popup__btn_resume btn">Resume</button>
+          <button type="button" class="pause-buttons-popup__btn_restart btn">Restart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <audio class="wasted-sound" src="./wasted.mp3"></audio>
+  <audio class="bullet-sound" src="./bullet-sound.mp3"></audio>
+
+  <script src="js/script.js" type="module"></script>
+</body>
+
+</html>
